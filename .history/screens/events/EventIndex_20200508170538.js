@@ -21,9 +21,11 @@ const BirthdayIndex = (props) => {
       }}
     >
       <View style={styles.screen}>
-        <EventItem name="isaac" date="14-05-1999"
+        <EventItem
+          name="facebook Dev's conference"
+          date="14-05-2020"
           onPress={() => {
-            props.navigation.navigate({ routeName: "configureBirthday" });
+            props.navigation.navigate({ routeName: "configureEvent" });
           }}
         />
         {modalVisible && (
@@ -37,12 +39,12 @@ const BirthdayIndex = (props) => {
                     color="#fff"
                     onPress={() => {
                       props.navigation.navigate({
-                        routeName: "AddNewBirthday",
+                        routeName: "AddNewEvent",
                       });
                     }}
                   />
                 </View>
-                <Text>Add Birthday</Text>
+                <Text>Add Event</Text>
               </View>
 
               <View style={styles.modalIcons}>
@@ -161,7 +163,7 @@ const styles = StyleSheet.create({
 });
 BirthdayIndex.navigationOptions = (navData) => {
   return {
-    headerTitle: "Birthdays",
+    headerTitle: "Events",
     headerStyle: {
       backgroundColor: Platform.OS === "android" ? Colors.primary : "",
     },

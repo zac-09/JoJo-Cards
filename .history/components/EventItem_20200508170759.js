@@ -32,7 +32,7 @@ const EventItem = (props) => {
             <Text style={styles.text}>{props.date}</Text>
           </View>
           <View style={styles.days}>
-            <Text style={{ ...styles.text, fontSize: 18 }}>6</Text>
+            <Text style={{ ...styles.text, fontSize: 18 }}>8</Text>
             <Text style={styles.text}>Days left</Text>
           </View>
           <View style={styles.arrow}>

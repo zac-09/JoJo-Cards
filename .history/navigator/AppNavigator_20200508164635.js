@@ -13,7 +13,7 @@ import ConfigureWeddingScreen from "../screens/weddingAnniversaries/ConfigureWed
 
 import WorkIndex from "../screens/workAnniversaries/WorkIndex";
 import AddNewWorkScreen from "../screens/workAnniversaries/AddNewWorkScreen";
-import ConfigureWorkScreen from "../screens/workAnniversaries/ConfigureWorkScreen";
+import ConfigureWorkScreen from "../screens/workAnniversaries/ConfigureBirthdayScreen";
 import WelcomeScreen from "./../screens/welcome/WelcomeScreen";
 import HomeScreen from "./../screens/home/HomeScreen";
 import BackupScreen from "./../screens/backup/BackupScreen";
@@ -26,7 +26,7 @@ import HelpScreen from "./../screens/help/HelpScreen";
 import MissingRemindersScreen from "./../screens/missingReminders/MissingRemindersScreen";
 import RateUsScreen from "./../screens/rateUs/RateUsScreen";
 import ShareScreen from "./../screens/share/ShareScreen";
-import Map from "./../screens/maps/Map"
+
 import Colors from "./../constants/Colors";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -70,7 +70,7 @@ const weddingNav = createStackNavigator(
       screen: AddNewWeddingScreen,
     },
     configureWedding: {
-      screen: ConfigureWeddingScreen,
+      screen: ConfigureWorkScreen,
     },
   },
   {
@@ -127,7 +127,6 @@ const MainNavigator = createStackNavigator(
     events: { screen: eventNav },
     weddings: { screen: weddingNav },
     work: { screen: workNav },
-    sales:{screen:Map}
   },
   {
     defaultNavigationOptions: defaultNavOptions,

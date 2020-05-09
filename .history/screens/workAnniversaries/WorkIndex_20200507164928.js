@@ -21,7 +21,7 @@ const BirthdayIndex = (props) => {
       }}
     >
       <View style={styles.screen}>
-        <EventItem name="isaac" date="14-05-1999"
+        <EventItem
           onPress={() => {
             props.navigation.navigate({ routeName: "configureBirthday" });
           }}

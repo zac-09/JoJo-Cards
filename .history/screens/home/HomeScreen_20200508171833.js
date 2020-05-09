@@ -47,7 +47,7 @@ const HomeScreen = (props) => {
       id: Math.random().toString,
       name: "account-balance-wallet",
       text: "Sales Points",
-      counter: "4",
+      counter: "1",
       route: "sales",
     },
   ];

@@ -26,7 +26,7 @@ import HelpScreen from "./../screens/help/HelpScreen";
 import MissingRemindersScreen from "./../screens/missingReminders/MissingRemindersScreen";
 import RateUsScreen from "./../screens/rateUs/RateUsScreen";
 import ShareScreen from "./../screens/share/ShareScreen";
-import Map from "./../screens/maps/Map"
+
 import Colors from "./../constants/Colors";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -127,7 +127,6 @@ const MainNavigator = createStackNavigator(
     events: { screen: eventNav },
     weddings: { screen: weddingNav },
     work: { screen: workNav },
-    sales:{screen:Map}
   },
   {
     defaultNavigationOptions: defaultNavOptions,

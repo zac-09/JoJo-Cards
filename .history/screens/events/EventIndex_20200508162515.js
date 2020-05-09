@@ -21,7 +21,7 @@ const BirthdayIndex = (props) => {
       }}
     >
       <View style={styles.screen}>
-        <EventItem name="isaac" date="14-05-1999"
+        <EventItem
           onPress={() => {
             props.navigation.navigate({ routeName: "configureBirthday" });
           }}
@@ -37,12 +37,12 @@ const BirthdayIndex = (props) => {
                     color="#fff"
                     onPress={() => {
                       props.navigation.navigate({
-                        routeName: "AddNewBirthday",
+                        routeName: "AddNewEvent",
                       });
                     }}
                   />
                 </View>
-                <Text>Add Birthday</Text>
+                <Text>Add Event</Text>
               </View>
 
               <View style={styles.modalIcons}>

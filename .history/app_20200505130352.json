@@ -24,13 +24,5 @@
     "ios": {
       "supportsTablet": true
     }
-  },
-  "android": {
-    "package": "ug.co.codebits.messenger",
-    "config": {
-      "googleMaps": {
-          "apiKey": "AIzaSyAfO6Pi32GUCliRVfwUxc7mK4ZNaQ9a8Mk"
-      }
-  }
   }
 }

@@ -12,7 +12,7 @@ import { HeaderButtons, Item } from "react-navigation-header-buttons";
 import HeaderButton from "./../../components/HeaderButton";
 import EventItem from "./../../components/EventItem";
 import ModalCard from "./../../components/ModalCard";
-const BirthdayIndex = (props) => {
+const WeddingIndex = (props) => {
   const [modalVisible, setIsModalVisible] = useState(false);
   return (
     <TouchableWithoutFeedback
@@ -21,7 +21,7 @@ const BirthdayIndex = (props) => {
       }}
     >
       <View style={styles.screen}>
-        <EventItem name="isaac" date="14-05-1999"
+        <EventItem name="isaac's wedding" date="14-05-2020"
           onPress={() => {
             props.navigation.navigate({ routeName: "configureBirthday" });
           }}
@@ -37,12 +37,12 @@ const BirthdayIndex = (props) => {
                     color="#fff"
                     onPress={() => {
                       props.navigation.navigate({
-                        routeName: "AddNewBirthday",
+                        routeName: "AddNewWedding",
                       });
                     }}
                   />
                 </View>
-                <Text>Add Birthday</Text>
+                <Text>Add Wedding</Text>
               </View>
 
               <View style={styles.modalIcons}>
@@ -159,9 +159,9 @@ const styles = StyleSheet.create({
     padding: 12,
   },
 });
-BirthdayIndex.navigationOptions = (navData) => {
+WeddingIndex.navigationOptions = (navData) => {
   return {
-    headerTitle: "Birthdays",
+    headerTitle: "Weddings",
     headerStyle: {
       backgroundColor: Platform.OS === "android" ? Colors.primary : "",
     },
@@ -190,4 +190,4 @@ BirthdayIndex.navigationOptions = (navData) => {
     ),
   };
 };
-export default BirthdayIndex;
+export default WeddingIndex;
